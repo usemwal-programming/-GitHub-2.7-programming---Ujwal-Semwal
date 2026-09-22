@@ -40,7 +40,7 @@ try:
     start_dt = datetime.datetime.strptime(start_date, "%d/%m/%Y")
     return_dt = datetime.datetime.strptime(return_date, "%d/%m/%Y")
      except ValueError:
-        return False, "Dates
+        return False, "Dates must follow DD/MM/YYYY format"
 
 
     # this function checks the validity of the return date so it is not before the hire date
