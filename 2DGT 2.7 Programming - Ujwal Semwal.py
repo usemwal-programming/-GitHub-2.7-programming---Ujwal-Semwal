@@ -24,7 +24,7 @@ def validate_inputs(name, receipt, item, qty_text, start_date, return_date):
         return False, "Customer name can only contain letters."
         
 this function checks the validity of the receipt number so it only contains numbers
-    
+    if not receipt.isdigit
     
     # this function checks the validity of the return date so it is not before the hire date
     if return_dt < start_dt:
