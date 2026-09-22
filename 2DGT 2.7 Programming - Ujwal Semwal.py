@@ -38,7 +38,7 @@ quantity = int(qty_text)
 # this function checks the validity of dates for correct format and logical timeline order
 try:
     start_dt = datetime.datetime.strptime(start_date, "%d/%m/%Y")
-    return_dt = datetime.datetime.strptime
+    return_dt = datetime.datetime.strptime(return_date, "%d/%m/%Y")
 
 
     # this function checks the validity of the return date so it is not before the hire date
