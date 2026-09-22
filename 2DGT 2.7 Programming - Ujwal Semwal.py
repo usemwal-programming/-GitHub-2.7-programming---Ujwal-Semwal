@@ -37,7 +37,7 @@ quantity = int(qty_text)
 
 # this function checks the validity of dates for correct format and logical timeline order
 try:
-
+    start_dt = datetime.datetime.strptime
 
 
     # this function checks the validity of the return date so it is not before the hire date
