@@ -36,6 +36,7 @@ quantity = int(qty_text)
         return False, f"Quantity must be between {MIN_QTY} and {MAX_QTY}."
 
 # this function checks the validity of dates for correct format and logical timeline order
+try:
 
 
 
