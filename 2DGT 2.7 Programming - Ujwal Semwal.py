@@ -33,7 +33,7 @@ this function checks the validity of the receipt number so it only contains numb
        
 quantity = int(qty_text)
  if quantity < MIN_QTY or quantity > MAX_QTY:
-        return False,
+        return False, f"Quantity must be between {MIN_QTY} and {MAX_QTY}."
 
 
 
