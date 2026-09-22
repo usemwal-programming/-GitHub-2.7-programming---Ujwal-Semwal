@@ -37,7 +37,7 @@ quantity = int(qty_text)
 
 # this function checks the validity of dates for correct format and logical timeline order
 try:
-    start_dt = datetime.datetime.strptime
+    start_dt = datetime.datetime.strptime(start_date, "%d/%m/%Y")
     return_dt = datetime.datetime.strptime
 
 
