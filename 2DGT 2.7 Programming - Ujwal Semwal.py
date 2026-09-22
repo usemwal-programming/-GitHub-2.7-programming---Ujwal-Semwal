@@ -23,9 +23,8 @@ def validate_inputs(name, receipt, item, qty_text, start_date, return_date):
     if not name.replace(" ", "").isalpha():
         return False, "Customer name can only contain letters."
         
-# this function checks the validity of the quantity so it is a whole number within limits
-     if not name.replace(" ", "").isalpha():
-         return False, "Customer name can only contain letters."
+this function checks the validity of the receipt number so it only contains numbers
+    
     
     # this function checks the validity of the return date so it is not before the hire date
     if return_dt < start_dt:
