@@ -25,6 +25,7 @@ def validate_inputs(name, receipt, item, qty_text, start_date, return_date):
         
 this function checks the validity of the receipt number so it only contains numbers
     if not receipt.isdigit():
+        return False, "Receipt number must be numbers only."
     
     # this function checks the validity of the return date so it is not before the hire date
     if return_dt < start_dt:
