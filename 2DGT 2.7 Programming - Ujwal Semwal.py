@@ -30,7 +30,11 @@ this function checks the validity of the receipt number so it only contains numb
 # this function checks the validity of the quantity so it is a whole number within limits
    if not qty_text.isdigit():
        return False, "Quantity must be a valid whole number."
-    
+quantity = int(qty_)
+
+
+
+
     # this function checks the validity of the return date so it is not before the hire date
     if return_dt < start_dt:
         return False, "Return date cannot be before hire start date."
