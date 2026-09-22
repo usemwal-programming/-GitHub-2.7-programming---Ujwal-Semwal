@@ -30,7 +30,10 @@ this function checks the validity of the receipt number so it only contains numb
 # this function checks the validity of the quantity so it is a whole number within limits
    if not qty_text.isdigit():
        return False, "Quantity must be a valid whole number."
+       
 quantity = int(qty_text)
+ if quantity < MIN_QTY or quantity > MAX_QTY:
+        return False,
 
 
 
