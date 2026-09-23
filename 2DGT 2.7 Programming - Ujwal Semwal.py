@@ -42,7 +42,6 @@ try:
      except ValueError:
         return False, "Dates must follow DD/MM/YYYY format"
 
-
     # this function checks the validity of the return date so it is not before the hire date
     if return_dt < start_dt:
         return False, "Return date cannot be before hire start date."
@@ -54,6 +53,7 @@ def set_placeholder(entry_box):
     entry_box.insert(0, DATE_HINT)
     entry_box.config(fg="grey")
 
+def clear_placeholder(event, entry_box):
 
 def add_hire_record():
     # this function gets all string values entered into the gui entry boxes
