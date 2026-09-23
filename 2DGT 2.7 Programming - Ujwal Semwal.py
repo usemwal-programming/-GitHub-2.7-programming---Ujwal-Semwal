@@ -105,6 +105,7 @@ def delete_hire_record():
     refresh_display()
     messagebox.showinfo("Success", "Record deleted successfully.")
 
+def refresh_display():
 
 def clear_form():
     # this function resets all text entry boxes back to blank or default placeholders
