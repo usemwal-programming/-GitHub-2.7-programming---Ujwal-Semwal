@@ -169,6 +169,7 @@ entry_start.pack(pady=2)
 # this creates the return date entry field and listens for when the customer clicks it
 tk.Label(root, text="Return Date:", font=("Helvetica", 10, "bold"), bg="#eef2f5").pack(pady=(4, 0))
 entry_return = tk.Entry(root, width=40)
+
 set_placeholder(entry_return)
 entry_return.bind("<FocusIn>", lambda event: clear_placeholder(event, entry_return))
 entry_return.bind("<FocusOut>", lambda event: restore_placeholder(event, entry_return))
@@ -191,6 +192,9 @@ v_scroll.pack(side=tk.RIGHT, fill=tk.Y)
 
 h_scroll = tk.Scrollbar(list_frame, orient=tk.HORIZONTAL)
 h_scroll.pack(side=tk.BOTTOM, fill=tk.X)
+
+listbox_hires = tk.Listbox(list_frame, width=85, height=6, font=("Courier", 9), yscrollcommand=v_scroll.set, xscrollcommand=h_scroll.set)
+listbox_hires.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
 # this creates the button that deletes the selected row from the listbox
 btn_delete = tk.Button(root, text="Delete Selected Hire", command=delete_hire_record, bg="#e67e22", fg="white", font=("Helvetica", 10, "bold"), width=22)
