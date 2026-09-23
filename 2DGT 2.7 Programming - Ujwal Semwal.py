@@ -56,6 +56,7 @@ def set_placeholder(entry_box):
 def clear_placeholder(event, entry_box):
      if entry_box.get() == DATE_HINT:
         entry_box.delete(0, tk.END)
+        entry_box.config(fg="black")
 
 def add_hire_record():
     # this function gets all string values entered into the gui entry boxes
