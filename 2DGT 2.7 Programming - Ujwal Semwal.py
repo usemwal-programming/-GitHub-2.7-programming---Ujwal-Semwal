@@ -150,6 +150,7 @@ entry_receipt.pack(pady=2)
 
 tk.Label(root, text="Item Hired:", font=("Helvetica", 10, "bold"), bg="#eef2f5").pack(pady=(4, 0))
 entry_item = tk.Entry(root, width=40)
+entry_item.pack(pady=2)
 
 # this creates the start date box and listens for when the customer clicks it
 tk.Label(root, text="Date Hired From:", font=("Helvetica", 10, "bold"), bg="#eef2f5").pack(pady=(4, 0))
