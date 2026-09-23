@@ -143,6 +143,7 @@ tk.Label(root, text="Customer Full Name:", font=("Helvetica", 10, "bold"), bg="#
 entry_name = tk.Entry(root, width=40)
 entry_name.pack(pady=2)
 
+tk.Label(root, text="Receipt Number:", font=("Helvetica", 10, "bold"), bg="#eef2f5").pack(pady=(4, 0))
 
 # this creates the start date box and listens for when the customer clicks it
 tk.Label(root, text="Date Hired From:", font=("Helvetica", 10, "bold"), bg="#eef2f5").pack(pady=(4, 0))
