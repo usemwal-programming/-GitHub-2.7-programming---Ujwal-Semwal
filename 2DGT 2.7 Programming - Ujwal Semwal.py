@@ -60,7 +60,7 @@ def clear_placeholder(event, entry_box):
         entry_box.config(fg="black")
 
 def restore_placeholder(event, entry_box):
-     # this function brings back the placeholder
+     # this function brings back the placeholder text if the entry box is left empty
     if not entry_box.get().strip():
         set_placeholder(entry_box)
 
