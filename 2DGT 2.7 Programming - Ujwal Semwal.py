@@ -68,6 +68,7 @@ def add_hire_record():
     # this function gets all string values entered into the gui entry boxes
     name = entry_name.get().strip()
     receipt = entry_receipt.get().strip()
+    item = entry_item.get().strip()
 
 
     # this function runs the validation subroutine and checks if inputs passed validity
