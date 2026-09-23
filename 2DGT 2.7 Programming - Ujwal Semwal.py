@@ -109,6 +109,7 @@ def refresh_display():
     listbox_hires.delete(0, tk.END)
     for row in hire_list:
          display_string = f"Name: {row[0]} | Receipt #: {row[1]} | Item: {row[2]} | Qty: {row[3]} | Start: {row[4]} | Return: {row[5]}"
+         listbox_hires.insert(tk.END, display_string)
 
 def clear_form():
     # this function resets all text entry boxes back to blank or default placeholders
