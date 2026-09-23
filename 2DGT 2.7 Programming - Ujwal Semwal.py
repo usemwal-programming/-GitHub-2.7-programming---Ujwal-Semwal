@@ -143,6 +143,7 @@ tk.Label(root, text="Customer Full Name:", font=("Helvetica", 10, "bold"), bg="#
 entry_name = tk.Entry(root, width=40)
 entry_name.pack(pady=2)
 
+# this creates the label and text entry box for the receipt number
 tk.Label(root, text="Receipt Number:", font=("Helvetica", 10, "bold"), bg="#eef2f5").pack(pady=(4, 0))
 entry_receipt = tk.Entry(root, width=40)
 entry_receipt.pack(pady=2)
