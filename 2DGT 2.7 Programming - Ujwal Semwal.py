@@ -59,6 +59,8 @@ def clear_placeholder(event, entry_box):
         entry_box.delete(0, tk.END)
         entry_box.config(fg="black")
 
+def restore_placeholder(event, entry_box):
+
 def add_hire_record():
     # this function gets all string values entered into the gui entry boxes
     name = entry_name.get().strip()
