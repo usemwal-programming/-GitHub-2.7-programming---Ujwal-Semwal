@@ -70,6 +70,7 @@ def add_hire_record():
     receipt = entry_receipt.get().strip()
     item = entry_item.get().strip()
     qty_text = entry_quantity.get().strip()
+    start_date = entry_start.get().strip()
 
 
     # this function runs the validation subroutine and checks if inputs passed validity
