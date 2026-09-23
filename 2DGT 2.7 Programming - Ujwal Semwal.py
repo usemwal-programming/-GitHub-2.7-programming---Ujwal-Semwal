@@ -148,6 +148,7 @@ tk.Label(root, text="Receipt Number:", font=("Helvetica", 10, "bold"), bg="#eef2
 entry_receipt = tk.Entry(root, width=40)
 entry_receipt.pack(pady=2)
 
+# this creates the label and text entry box for the hired item name
 tk.Label(root, text="Item Hired:", font=("Helvetica", 10, "bold"), bg="#eef2f5").pack(pady=(4, 0))
 entry_item = tk.Entry(root, width=40)
 entry_item.pack(pady=2)
