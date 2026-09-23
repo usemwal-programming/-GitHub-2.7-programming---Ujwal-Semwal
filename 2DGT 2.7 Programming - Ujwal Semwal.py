@@ -54,6 +54,7 @@ def set_placeholder(entry_box):
     entry_box.config(fg="grey")
 
 def clear_placeholder(event, entry_box):
+     # this function clears the placeholder text when the user clicks inside the entry box
      if entry_box.get() == DATE_HINT:
         entry_box.delete(0, tk.END)
         entry_box.config(fg="black")
