@@ -106,6 +106,8 @@ def delete_hire_record():
     messagebox.showinfo("Success", "Record deleted successfully.")
 
 def refresh_display():
+    listbox_hires.delete(0, tk.END)
+    for row in hire_list:
 
 def clear_form():
     # this function resets all text entry boxes back to blank or default placeholders
