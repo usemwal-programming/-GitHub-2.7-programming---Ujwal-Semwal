@@ -154,6 +154,8 @@ entry_item = tk.Entry(root, width=40)
 entry_item.pack(pady=2)
 
 tk.Label(root, text=f"Quantity ({MIN_QTY}-{MAX_QTY}):", font=("Helvetica", 10, "bold"), bg="#eef2f5").pack(pady=(4, 0))
+entry_quantity = tk.Entry(root, width=40)
+entry_quantity.pack(pady=2)
 
 # this creates the start date box and listens for when the customer clicks it
 tk.Label(root, text="Date Hired From:", font=("Helvetica", 10, "bold"), bg="#eef2f5").pack(pady=(4, 0))
