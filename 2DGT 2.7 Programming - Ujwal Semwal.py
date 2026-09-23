@@ -197,6 +197,7 @@ h_scroll.pack(side=tk.BOTTOM, fill=tk.X)
 listbox_hires = tk.Listbox(list_frame, width=85, height=6, font=("Courier", 9), yscrollcommand=v_scroll.set, xscrollcommand=h_scroll.set)
 listbox_hires.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
+# this links the scrollbars directly to the listbox view
 v_scroll.config(command=listbox_hires.yview)
 h_scroll.config(command=listbox_hires.xview)
 
